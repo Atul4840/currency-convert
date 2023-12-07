@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #93c7c7;
+}
+
+.converter-container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(61, 56, 56, 0.5);
+  text-align: center;
+}
+
+.converter-container h1 {
+  font-size: 28px;
+  text-decoration: underline;
+  color: rgb(71, 68, 68);
+  margin-bottom: 40px;
+}
+
+.converter-container .input-container {
+  border: 2px solid #bbbbbd;
+  border-radius: 4px;
+  margin-block: 20px;
+}
+
+.converter-container .input-container:focus-within {
+  border-color: blue;
+}
+
+.converter-container .input-container input,
+.converter-container .input-container select {
+  width: 150px;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  padding: 4px;
+  overflow: hidden;
+}
+
+.converter-container .arrow {
+  font-size: 2.6rem;
+}
+
+.converter-container .result {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 440px) {
+  .converter-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .converter-container h1 {
+    font-size: 22px;
+  }
+
+  .converter-container .input-container {
+    border: none;
+  }
+
+  .converter-container .input-container input,
+  .converter-container .input-container select {
+    border: 1px solid #ccc;
+    margin-bottom: 4px;
+    width: 100%;
+  }
+}
